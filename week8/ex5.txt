@@ -1,0 +1,1 @@
+The difference between the physical address and virtual address is that physical address addresses you to some particular place in the memory and virtual address addresses you in some virtual store and point to a physical address.

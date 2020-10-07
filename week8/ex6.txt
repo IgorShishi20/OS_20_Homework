@@ -1,0 +1,1 @@
+Page size is 8 KB. We have 16 bit address. For one byte in page we need log2(8*1024)=13 bits, so 3 bits we can use for determining entries, so we have 2^3=8 entries
