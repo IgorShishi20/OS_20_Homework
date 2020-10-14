@@ -1,2 +1,2 @@
-When we put in a sequence only N different numbers we will always have hit so hit will be 1000
+When we full sequence with one number we will nearly always have hit so hit will be 999
 When we put in a sequence 1000 different numbers we won't get hit so hit will be 0
