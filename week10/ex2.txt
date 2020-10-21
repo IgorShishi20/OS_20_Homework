@@ -1,0 +1,5 @@
+12666373952188453 ./week01/file.txt
+16607023626137086 ./week01/file.txt
+26740122787721640 ./week01/file.txt
+./week01/file.txt
+./week10/_ex2.txt

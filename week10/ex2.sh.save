@@ -1,0 +1,3 @@
+touch /mnt/c/Text/week01/file.txt
+link /mnt/c/Text/week01/file.txt /mnt/c/Text/week10/_ex2.txt
+f
