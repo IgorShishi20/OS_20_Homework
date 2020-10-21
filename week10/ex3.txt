@@ -1,0 +1,53 @@
+total 0
+-rwxrwxrwx 3 elterder25 elterder25    0 Oct 21 12:16 _ex1.txt
+-rwxrwxrwx 3 elterder25 elterder25    0 Oct 21 12:16 _ex1_1.txt
+-rwxrwxrwx 3 elterder25 elterder25    0 Oct 21 12:16 _ex1_2.txt
+-rwxrwxrwx 1 elterder25 elterder25    0 Oct 21 19:07 _ex3.txt
+-rwxrwxrwx 1 elterder25 elterder25  137 Oct 21 12:15 ex1.sh
+-rwxrwxrwx 1 elterder25 elterder25   85 Oct 21 12:16 ex1.txt
+-rwxrwxrwx 1 elterder25 elterder25   99 Oct 21 13:19 ex2.sh
+-rwxrwxrwx 1 elterder25 elterder25   97 Oct 21 13:19 ex2.sh.save
+-rwxrwxrwx 1 elterder25 elterder25  144 Oct 21 13:18 ex2.txt
+-rwxrwxrwx 1 elterder25 elterder25   87 Oct 21 13:14 ex2_2.sh
+-rwxrwxrwx 1 elterder25 elterder25    0 Oct 21 13:18 ex2_add.txt
+-rwxrwxrwx 1 elterder25 elterder25  139 Oct 21 20:03 ex3.sh
+-rwxrwxrwx 1 elterder25 elterder25    0 Oct 21 20:07 ex3.txt
+drwxrwxrwx 1 elterder25 elterder25 4096 Oct 21 13:14 week01
+drwxrwxrwx 1 elterder25 elterder25 4096 Oct 21 13:14 week10
+total 4
+-rwxrwxrwx 3 elterder25 elterder25    0 Oct 21 12:16 _ex1.txt
+-rwxrwxrwx 3 elterder25 elterder25    0 Oct 21 12:16 _ex1_1.txt
+-rwxrwxrwx 3 elterder25 elterder25    0 Oct 21 12:16 _ex1_2.txt
+-rwxrwxrwx 1 elterder25 elterder25    0 Oct 21 19:07 _ex3.txt
+-rwxrwxrwx 1 elterder25 elterder25  137 Oct 21 12:15 ex1.sh
+-rwxrwxrwx 1 elterder25 elterder25   85 Oct 21 12:16 ex1.txt
+-rwxrwxrwx 1 elterder25 elterder25   99 Oct 21 13:19 ex2.sh
+-rwxrwxrwx 1 elterder25 elterder25   97 Oct 21 13:19 ex2.sh.save
+-rwxrwxrwx 1 elterder25 elterder25  144 Oct 21 13:18 ex2.txt
+-rwxrwxrwx 1 elterder25 elterder25   87 Oct 21 13:14 ex2_2.sh
+-rwxrwxrwx 1 elterder25 elterder25    0 Oct 21 13:18 ex2_add.txt
+-rwxrwxrwx 1 elterder25 elterder25  139 Oct 21 20:03 ex3.sh
+-rwxrwxrwx 1 elterder25 elterder25  935 Oct 21 20:07 ex3.txt
+drwxrwxrwx 1 elterder25 elterder25 4096 Oct 21 13:14 week01
+drwxrwxrwx 1 elterder25 elterder25 4096 Oct 21 13:14 week10
+total 4
+-rwxrwxrwx 3 elterder25 elterder25    0 Oct 21 12:16 _ex1.txt
+-rwxrwxrwx 3 elterder25 elterder25    0 Oct 21 12:16 _ex1_1.txt
+-rwxrwxrwx 3 elterder25 elterder25    0 Oct 21 12:16 _ex1_2.txt
+-rwxrwxrwx 1 elterder25 elterder25    0 Oct 21 19:07 _ex3.txt
+-rwxrwxrwx 1 elterder25 elterder25  137 Oct 21 12:15 ex1.sh
+-rwxrwxrwx 1 elterder25 elterder25   85 Oct 21 12:16 ex1.txt
+-rwxrwxrwx 1 elterder25 elterder25   99 Oct 21 13:19 ex2.sh
+-rwxrwxrwx 1 elterder25 elterder25   97 Oct 21 13:19 ex2.sh.save
+-rwxrwxrwx 1 elterder25 elterder25  144 Oct 21 13:18 ex2.txt
+-rwxrwxrwx 1 elterder25 elterder25   87 Oct 21 13:14 ex2_2.sh
+-rwxrwxrwx 1 elterder25 elterder25    0 Oct 21 13:18 ex2_add.txt
+-rwxrwxrwx 1 elterder25 elterder25  139 Oct 21 20:03 ex3.sh
+-rwxrwxrwx 1 elterder25 elterder25 1870 Oct 21 20:07 ex3.txt
+drwxrwxrwx 1 elterder25 elterder25 4096 Oct 21 13:14 week01
+drwxrwxrwx 1 elterder25 elterder25 4096 Oct 21 13:14 week10
+
+Seems like chmod a-x filename does not work correctly on Windows C-drive, but on Linux it should work. In Windows there are another "permissions" called attributes like "hidden" "system" "read-only" etc. chmod can remove write permission - make file "read only" and give write permission.
+When your file has 660 permission, this means that owner and group can read and write in a file but not execute it. Also others can not do anything with a file.
+When your file has 775 permission, this means that file has default permissions: owner and group have all permissions and others can only read and execute file, but not write in it.
+When your file has 777 permission, this means that everybody have full access to this file
