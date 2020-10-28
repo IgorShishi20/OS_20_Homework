@@ -1,0 +1,7 @@
+For the first program we have output: Hello
+			            Hello
+For the  second program we have output: Hello
+
+
+
+The difference is in printing end of line. In first program a buffer contain Hello string and when we fork process both processes get Hello from buffer and print it in different lines (because of printf("\n"); after fork). In second program we print Hello string and when buffer read "/n" it become empty, so when we fork we finish with empty buffer and "/n" after the fork add two more empty strings in output. 
