@@ -1,0 +1,20 @@
+real	0m0.059s		user	0m0.000s		sys	0m0.063s
+real	0m0.356s		user	0m0.000s		sys	0m0.313s
+real	0m0.036s		user	0m0.000s      	sys	0m0.016s
+real	0m0.035s		user	0m0.000s		sys	0m0.000s
+
+real	0m0.301s		user	0m0.000s		sys	0m0.188s
+real	0m2.672s		user	0m0.094s		sys	0m1.953s
+real	0m0.051s		user	0m0.000s		sys	0m0.000s
+real	0m0.034s		user	0m0.000s		sys	0m0.016s
+
+real	0m0.605s		user	0m0.016s		sys	0m0.375s
+real	0m4.188s		user	0m0.219s		sys	0m3.797s
+real	0m0.040s		user	0m0.000s		sys	0m0.000s
+real	0m0.046s		user	0m0.000s		sys	0m0.016s
+
+real	0m0.487s		user	0m0.000s		sys	0m0.391s
+real	0m4.609s		user	0m0.156s		sys	0m4.156s
+real	0m0.096s		user	0m0.000s		sys	0m0.016s
+real	0m0.032s		user	0m0.000s		sys	0m0.016s
+Increasing buffer size can decrease execution time of program nearly linear for big files but slowly increase or even decrease on small files. Synk can improve "effiency" but for big files, on small files it is not working effiently
