@@ -1,0 +1,4 @@
+There are three strategies to deal with deadlocks: recovery, avoidance, prevention.
+Recovery is preferable when we deal with a big number of processes which states we save quite often, so we need to restore small amount of work, which was lost during recovery. We also don't need to check conditions of deadlock or have nessesary information about further requests
+Avoidance is preferable when we have information about requests in advance, when we have processes which require big amount of resources but have a few checkpoints states. Also we don't need to deal with conditions which are need for deadlock.
+Prevention is preferable when we don't have nessesary information about processes in advance and cannot just kill some small processes or go to last checkpoint. 
